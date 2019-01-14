@@ -26,7 +26,7 @@ services:
       - "--acme.email=contact@mydomain.ca"
       - "--docker"
       - "--docker.swarmMode"
-      - "--docker.domain=peaks.fr"
+      - "--docker.domain=gdna.eu"
       - "--docker.watch"
     deploy:
       mode: global
