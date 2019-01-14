@@ -5,7 +5,7 @@ services:
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /home/docker/Traefik-Exemple/acme.json:/acme.json
+      - ../Traefikdata/acme.json:/acme.json
     networks:
       - traefik-net
     ports:
@@ -33,9 +33,9 @@ services:
       placement:
         constraints:
           - node.role == manager
-      update_config:
-        parallelism: 1
-        delay: 10s
+      # update_config:
+        # parallelism: 1
+        # delay: 10s
       restart_policy:
         condition: on-failure
 
