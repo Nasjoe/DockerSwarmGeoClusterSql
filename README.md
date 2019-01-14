@@ -19,4 +19,4 @@ Sur le manager :
 git pull https://github.com/Nasjoe/DockerSwarmGeoClusterSql.git
 docker network create --driver=overlay traefik-net
 
-docker stack deploy -c composes/traefik-docker-compose.yml mystack
+docker stack deploy -c composes/https-traefik-docker-compose.yml mystack
