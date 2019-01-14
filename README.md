@@ -24,6 +24,7 @@ docker network create --driver=overlay traefik-net
 docker stack deploy -c composes/https-traefik-docker-compose.yml mystack
 
 ## Cluster Control :
+docker network create --driver=overlay galera_cc
 docker stack deploy -c composes/clustercontrol-docker-compose.yml mystack
 
 
