@@ -4,7 +4,6 @@ services:
  
   galera:
     deploy:
-      mode: global
       replicas: 3
       restart_policy:
         condition: on-failure
@@ -23,7 +22,6 @@ services:
   clustercontrol:
     deploy:
       replicas: 1
-      mode: global
       placement:
         constraints:
           - node.role == manager
