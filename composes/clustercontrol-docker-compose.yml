@@ -30,4 +30,9 @@ services:
  
 networks:
   galera_cc:
-    driver: overlay
+    external:
+      name: galera_cc
+ 
+# networks:
+#   galera_cc:
+#     driver: overlay
